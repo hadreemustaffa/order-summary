@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+	--red-hat: 'Red Hat Display', sans-serif;
+
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--red-hat);
+}
+
+body {
+	background-color: var(--pale-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 2rem;
+	color: var(--dark-blue);
+}
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--desaturated-blue);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--very-pale-blue);
+	width: 25vw;
+	max-width: 450px;
+	/* min-height: 595px; */
+	border-radius: 20px;
+}
+
+#hero-img {
+	width: 100%;
+	height: auto;
+	border-radius: 20px 20px 0 0;
+}
+
+#content-container {
+	padding: 45px;
+}
+
+#text-container {
+	text-align: center;
+	padding: 0px 25px 25px 25px;
+}
+#text-container > h1 {
+	padding-bottom: 20px;
+}
+
+#plan-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr;
+	padding: 25px;
+	background-color: hsla(225, 80%, 94%, 0.3);
+	border-radius: 10px;
+}
+#price-container {
+	display: flex;
+	flex-direction: column;
+}
+#price-container > #text {
+	color: var(--dark-blue);
+}
+#change-container {
+	margin: auto;
+}
+#change-container > #change {
+	background: none;
+	border: none;
+	font-size: 0.9rem;
+	font-weight: 700;
+	text-decoration: underline;
+	color: var(--bright-blue);
+}
+
+#btn-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding-top: 30px;
+}
+#payment {
+	width: 100%;
+	padding: 15px;
+	color: var(--very-pale-blue);
+	background-color: var(--bright-blue);
+	font-weight: 900;
+	border-radius: 10px;
+	border: none;
+}
+#cancel {
+	width: fit-content;
+	background: none;
+	font-weight: 700;
+	border: none;
+	color: var(--desaturated-blue);
+}
+
+.attribution {
+	margin-top: 15px;
+	color: var(--desaturated-blue);
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.attribution a {
+	color: var(--dark-blue);
+}
