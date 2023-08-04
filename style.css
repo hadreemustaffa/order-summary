@@ -68,12 +68,12 @@ main {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 65%;
+	width: 55%;
 	height: 100%;
 	border-radius: 50%;
 	background-color: hsl(224, 100%, 95%);
-	right: -10%;
-	bottom: 20%;
+	right: -8%;
+	bottom: 25%;
 }
 #wave:after {
 	content: '';
