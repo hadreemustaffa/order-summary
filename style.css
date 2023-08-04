@@ -19,14 +19,17 @@
 
 body {
 	background: linear-gradient(
-		var(--pale-blue) 50%,
-		hsla(225, 100%, 94%, 0.75) 50%
+		var(--pale-blue) 40%,
+		hsla(225, 100%, 94%, 0.75) 40%
 	);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	z-index: -1;
 }
 
 h1 {
@@ -50,6 +53,38 @@ main {
 	max-width: 480px;
 	min-height: 595px;
 	border-radius: 20px;
+	z-index: 10;
+}
+
+#wave {
+	display: block;
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+#wave:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: hsl(224, 100%, 95%);
+	right: -10%;
+	bottom: 20%;
+}
+#wave:after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: var(--pale-blue);
+	left: -13%;
+	top: -90%;
 }
 
 #hero-img {
@@ -140,6 +175,7 @@ main {
 	font-size: 11px;
 	text-align: center;
 	padding-bottom: 20px;
+	z-index: 50;
 }
 
 .attribution a {
