@@ -173,6 +173,7 @@ main {
 	margin-top: 15px;
 	color: var(--desaturated-blue);
 	font-size: 11px;
+	min-width: 300px;
 	text-align: center;
 	padding-bottom: 20px;
 	z-index: 50;
@@ -180,4 +181,28 @@ main {
 
 .attribution a {
 	color: var(--dark-blue);
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		min-width: 330px;
+		min-height: auto;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 0.85rem;
+	}
+
+	#content-container {
+		height: auto;
+		padding: 30px 25px 25px 25px;
+	}
+
+	#plan-container {
+		padding: 15px;
+		grid-template-columns: 1fr 1.5fr 1fr;
+	}
 }
