@@ -14,11 +14,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	overflow-x: hidden;
 	font-family: var(--red-hat);
 }
 
 body {
+	overflow-x: hidden;
 	background: linear-gradient(
 		var(--pale-blue) 40%,
 		hsla(225, 100%, 94%, 0.75) 40%
@@ -68,7 +68,7 @@ main {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 55%;
+	width: 60%;
 	height: 100%;
 	border-radius: 50%;
 	background-color: hsl(224, 100%, 95%);
@@ -79,7 +79,7 @@ main {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 55%;
+	width: 60%;
 	height: 100%;
 	border-radius: 50%;
 	background-color: var(--pale-blue);
