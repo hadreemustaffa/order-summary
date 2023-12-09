@@ -4,48 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order Summary component solution for frontendmentor.io">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Order summary card</title>
 </head>
 
 <body>
-  <div id="wave"></div>
+  <div class="wave"></div>
   <main>
-    <img id="hero-img" alt="image of person dancing to music" src="images/illustration-hero.svg">
+    <img alt="image of person dancing to music" src="./images/illustration-hero.svg">
 
-    <section id="content-container">
-      <div id="text-container">
+    <div class="card flex column g-2">
+      <div class="card__text flex column g-1">
         <h1>Order Summary</h1>
         <p>
           You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
         </p>
       </div>
 
-      <div id="plan-container">
-        <img id="icon-music" alt="" src="images/icon-music.svg">
-        <div id="price-container">
-          <p id="text"><b>Annual Plan</b></p>
-          <p>$59.99/year</p>
+      <div class="card__plan flex row align-center justify-between">
+        <div class="flex row g-1">
+          <img class="card__plan-icon" alt="" src="./images/icon-music.svg">
+          <div class="card__plan-price">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
         </div>
 
-        <div id="change-container">
-          <button id="change" class="pointer" type="button">Change</button>
+        <div class="card__plan-change">
+          <button type="button">Change</button>
         </div>
       </div>
 
-      <div id="btn-container">
-        <button id="payment" class="pointer" type="submit">Proceed to Payment</button>
-        <button id="cancel" class="pointer" type="button">Cancel Order</button>
+      <div class="flex column g-2">
+        <button class="payment" type="submit">Proceed to Payment</button>
+        <button class="cancel" type="button">Cancel Order</button>
       </div>
-    </section>
+    </div>
   </main>
-
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Hadree Mustaffa</a>.
-  </footer>
 </body>
 
 </html>
